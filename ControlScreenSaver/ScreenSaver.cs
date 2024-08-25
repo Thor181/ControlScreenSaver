@@ -4,14 +4,14 @@ namespace ControlScreenSaver
 {
     public static class ScreenSaver
     {
-        public enum SpecialHandles
+        private enum SpecialHandles
         {
             HWND_DESKTOP = 0x0,
             HWND_BROADCAST = 0xFFFF
         }
 
         [DllImport("User32.dll")]
-        public static extern int SendMessage(IntPtr hWnd, uint Msg, uint wParam, uint lParam);
+        private static extern int SendMessage(IntPtr hWnd, uint Msg, uint wParam, uint lParam);
 
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
         private static extern int PostMessage(IntPtr hWnd,
@@ -36,14 +36,14 @@ namespace ControlScreenSaver
            IntPtr hWnd);
 
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        public static extern IntPtr GetForegroundWindow();
+        private static extern IntPtr GetForegroundWindow();
 
         // Callbacks
         private delegate bool EnumDesktopWindowsProc(
            IntPtr hDesktop, IntPtr lParam);
 
-        public const uint WM_SYSCOMMAND = 0x112;
-        public const uint SC_SCREENSAVE = 0xF140;
+        private const uint WM_SYSCOMMAND = 0x112;
+        private const uint SC_SCREENSAVE = 0xF140;
         private const uint DESKTOP_WRITEOBJECTS = 0x0080;
         private const uint DESKTOP_READOBJECTS = 0x0001;
         private const int WM_CLOSE = 16;
