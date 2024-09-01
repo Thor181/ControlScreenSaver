@@ -64,11 +64,6 @@ namespace ControlScreenSaver
                    IntPtr.Zero);
                 CloseDesktop(hDesktop);
             }
-            else
-            {
-                PostMessage(GetForegroundWindow(), WM_CLOSE,
-                   0, 0);
-            }
         }
 
         private static bool KillScreenSaverFunc(IntPtr hWnd,

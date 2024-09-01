@@ -5,6 +5,8 @@ VisualStudioVersion = 17.12.35209.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlScreenSaver", "ControlScreenSaver\ControlScreenSaver.csproj", "{D298D8E7-C232-454F-9CA4-1CA05D85F1A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlScreenSaver.Test", "ControlScreenSaver.Test\ControlScreenSaver.Test.csproj", "{3E15EBCC-C8E3-4E8B-B0D0-25DAB9CBF029}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D298D8E7-C232-454F-9CA4-1CA05D85F1A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D298D8E7-C232-454F-9CA4-1CA05D85F1A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D298D8E7-C232-454F-9CA4-1CA05D85F1A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E15EBCC-C8E3-4E8B-B0D0-25DAB9CBF029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E15EBCC-C8E3-4E8B-B0D0-25DAB9CBF029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E15EBCC-C8E3-4E8B-B0D0-25DAB9CBF029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E15EBCC-C8E3-4E8B-B0D0-25DAB9CBF029}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
